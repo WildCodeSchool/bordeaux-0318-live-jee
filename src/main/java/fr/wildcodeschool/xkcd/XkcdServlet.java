@@ -20,4 +20,9 @@ public class XkcdServlet extends HttpServlet {
         req.setAttribute("todaysComicUrl", imgUrl);
         req.getRequestDispatcher("/index.jsp").forward(req, resp);
     }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        doGet(req, resp);
+    }
 }
