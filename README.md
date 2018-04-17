@@ -5,9 +5,14 @@ Uses https://xkcd.com/json.html to display today's comic.
 ##Test with Glassfish/Payara
 
 ### JSP
+Today's XKCD:
 * http://localhost:8080/live-20180410/
 * http://localhost:8080/live-20180410/today
 * http://localhost:8080/live-20180410/xkcd
+
+Display a range of XKCD cartoons:
+* http://localhost:8080/live-20180410/xkcd/range?start=610&end=614
+
 
 ### JSF
 * http://localhost:8080/http://localhost:8080/live-20180410/comic.jsf
